@@ -60,12 +60,7 @@ namespace Code_Assessments
 					break;
 
 				}
-
-				//set paragraph
-				//get number of palindrome words
-				//get number of palindrome sentences
-				//get list of unique words with count
-				//input letter
+				
 				if(!cont)
 				{
 					break;

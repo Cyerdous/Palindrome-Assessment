@@ -92,13 +92,12 @@ namespace Code_Assessments
 		public void GetWordsContainingLetter(char letter)
 		{	
 			Console.WriteLine($"Words containing the letter {letter} in the paragraph:");
-			foreach (var word in _wordDict.Keys)
+			_wordDict.Keys.Where(word => word.Contains(letter))
+				.ToList()
+				.ForEach(word =>
 			{
-				if (word.Contains(letter))
-				{
-					Console.WriteLine(word);
-				}
-			}
+				Console.WriteLine(word);
+			});
 		}
 	}
 }
